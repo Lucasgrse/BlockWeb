@@ -54,13 +54,13 @@ class BlockSitesApp:
         # Bloqueia os sites
         self.service.block_sites_in_hosts()
         self.update_sites_listbox()     
-        messagebox.showinfo("Sucesso", "Sites bloqueados com sucesso.")
+        messagebox.showinfo("Sucesso", "Site(s) bloqueado(s) com sucesso.")
 
     def unblock_sites(self):
         # Desbloqueia os sites
         self.service.unblock_sites()
         self.update_sites_listbox()
-        messagebox.showinfo("Sucesso", "Sites desbloqueados com sucesso.")
+        messagebox.showinfo("Sucesso", "Site(s) desbloqueado(s) com sucesso.")
 
     def update_sites_listbox(self):
         self.sites_listbox.delete(0, tk.END)
